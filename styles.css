@@ -27,8 +27,8 @@ body {
 
 /* Header */
 header {
-    background-color: pink;
-    padding: 0 1rem;
+    background-color:rgb(81, 146, 165);
+    padding: 0 2rem;
     position: fixed;
     z-index: 99;
     width: 100%;
@@ -71,14 +71,13 @@ h4 {
 /* Navbar styles with dropdown toggle */
 nav {
     position:absolute;
-    background-color: pink;
     width: 100%;
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 100%;
-    color: rgb(195, 32, 189);
+    color: black;
 }
 
 /* Nav toggle */
@@ -113,7 +112,7 @@ main {
 #hero {
     height: 80vh;
     width: 100%;
-    background: url('./assets/favicon/images/hello-kitty-hero.jpg')no-repeat center center/cover;
+    background: url('./assets/favicon/images/hello-kitty-hero.jpg') no-repeat center center/cover;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -135,7 +134,7 @@ main {
         width: fit-content;
         padding-right: 1rem;
         padding-top: 1rem;
-        color: rgb(195, 32, 189);
+        color: black;
     }
 
     #menu {
