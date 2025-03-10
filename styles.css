@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:wght@100;400&family=Oswald:wght@200..700&family=Poller+One&display=swap');
+
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
     padding: 0;
@@ -17,7 +19,6 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #3a3a3a;
     font-family: 'Lato', sans-serif;
 }
 
@@ -121,7 +122,7 @@ main {
     }
     #hero-overlay {
         position: absolute;
-        background: rgba(209, 83, 165, 0.5); /* Dark overlay for contrast */
+        background: rgba(209, 83, 165, 0.5); 
         color: rgb(255, 255, 255);
         font-size: 130%;
     position: absolute;
@@ -142,6 +143,12 @@ p a {
 p a:hover {
     color: purple;
 }
+
+#about {
+    background-color: inherit;
+}
+
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
@@ -198,6 +205,17 @@ p a:hover {
         text-align: center;
     }
 
+    .c-item {
+        height: 480px;
+      }
+      
+      .c-img {
+        height: 100%;
+        object-fit: cover;
+        filter: brightness(0.8);
+      }
+ 
+
     /* Main content */
     main {
         /* Push main content down to accommodate larger header */
@@ -212,4 +230,5 @@ p a:hover {
     #menu a:hover {
         border-bottom: 1px solid #ffffff;
     }
+
 }
