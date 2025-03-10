@@ -104,6 +104,11 @@ main {
     flex-direction: column;
 }
 
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url('./assets/favicon/images/Hello-Kitty-Island-Adventure.webp') no-repeat center center/cover;
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -124,6 +129,7 @@ main {
         width: fit-content;
         padding-right: 1rem;
         padding-top: 1rem;
+        color: rgb(195, 32, 189);
     }
 
     #menu {
@@ -144,12 +150,23 @@ main {
          line-height: 75px;
          margin: 0 0.5rem;
         }
+
+    #hero {
+        background: url('/assets/favicon/images/hello-kitty-hero.jpg')no-repeat center center/cover;
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+    }
     
 
     /* Main content */
     main {
         /* Push main content down to accommodate larger header */
         margin-top: 79px;
+        background-color: rgb(190, 234, 190);
+        display: flex;
+        align-items: center;
     }
 
     /* Large devices (laptops and desktops, 992px and up) */
