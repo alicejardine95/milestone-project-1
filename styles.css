@@ -6,6 +6,12 @@
 }
 
 /* General styles */
+.lato-thin {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 body {
     min-height: 100vh;
     display: flex;
@@ -21,7 +27,7 @@ body {
 
 /* Header */
 header {
-    background-color: #ffffff;
+    background-color: pink;
     padding: 0 1rem;
     position: fixed;
     z-index: 99;
@@ -35,7 +41,7 @@ header a {
 }
 
 h1, h4 {
-    font-family: 'Oswald', sans-serif;
+    font-family: "lato", sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -47,6 +53,7 @@ h1, h4 {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #menu > li {
@@ -60,7 +67,7 @@ h1, h4 {
 /* Navbar styles with dropdown toggle */
 nav {
     position:absolute;
-    background-color: #ffffff;
+    background-color: pink;
     width: 100%;
     left: 0;
     padding: 0 1rem;
