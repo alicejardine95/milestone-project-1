@@ -107,7 +107,7 @@ main {
     /* Enable flex properties for child elements */
     display: flex;
     flex-direction: column;
-    background-color: rgb(81, 146, 165);
+    background-color: white;
 }
 
 #hero {
@@ -120,6 +120,7 @@ main {
         justify-content: center;
         text-align: center;
     }
+
     #hero-overlay {
         position: absolute;
         background: rgba(209, 83, 165, 0.5); 
@@ -148,26 +149,28 @@ p a:hover {
     background-color: inherit;
 }
 
+
 #game-events {
-    background: url('./assets/favicon/images/events.jpg')no-repeat center center/cover;
     display: flex;
     flex-wrap: wrap;
+    width: 100%; /* Ensures it spans the full width */
+    justify-content: space-between; /* Distributes the divs evenly */
+    align-items: stretch; /* Makes all child divs the same height */
+    background: url('./assets/favicon/images/events.jpg') no-repeat center center/cover;
     filter: brightness(0.8);
-
+    padding: 20px; /* Adds some spacing */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
-
 
 #game-events div {
-padding: 15px;
-text-align: center;
-/*This will not wrap on screens of less than 400px wide. Each div will expand to fill the available space on its row*/
-flex-basis: 200px;
-flex-grow: 1;
-/*Creates a grid of meetup time divs over the background image*/
-border: 2px solid pink;
-color: rgb(94, 90, 90);
-background-color: rgba(247, 240, 245, 0.5); 
-}
+    flex: 1; /* Makes each div take up equal space */
+    min-width: 200px; /* Ensures they don't get too small on smaller screens */
+    padding: 25px;
+    text-align: center;
+    border: 2px solid pink;
+    color: rgb(94, 90, 90);
+    background-color: rgba(247, 240, 245, 0.5);
+    margin: 10px; /* Adds some spacing between event boxes */
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -225,17 +228,6 @@ background-color: rgba(247, 240, 245, 0.5);
         text-align: center;
     }
 
-    .c-item {
-        height: 480px;
-      }
-      
-      .c-img {
-        height: 100%;
-        object-fit: cover;
-        filter: brightness(0.8);
-      }
-
-}
     /* Main content */
     main {
         /* Push main content down to accommodate larger header */
@@ -243,6 +235,7 @@ background-color: rgba(247, 240, 245, 0.5);
         display: flex;
         align-items: center;
     }
+}
 
     /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
