@@ -341,6 +341,17 @@ p a:hover {
         margin-left: 10px;
         width: 100%; /* Ensure h3 takes up full width */
     }
+
+    #info {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 575px) {
+
+    #info {
+        width: 80%;
+    }
 }
 
     /* Large devices (laptops and desktops, 992px and up) */
@@ -349,4 +360,9 @@ p a:hover {
     #menu a:hover {
         border-bottom: 1px solid #ffffff;
     }
+
+    #info {
+        width: 60%;
+    }
 }
+
