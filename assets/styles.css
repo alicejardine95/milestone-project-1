@@ -369,6 +369,12 @@ p a:hover {
     #info {
         width: 70%;
     }
+
+    .header-icon {
+        height: 40px;
+        width: 40px;
+        margin: 10px;
+    }
 }
 
 
