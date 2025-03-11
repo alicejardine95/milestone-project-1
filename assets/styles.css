@@ -66,6 +66,7 @@ nav {
     gap: 20px;
     list-style: none;
     padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #menu li {
@@ -163,6 +164,10 @@ p a:hover {
     background-color: inherit;
 }
 
+#carouselExample {
+    margin-bottom: 10px; /* Remove bottom margin */
+    padding-bottom: 50px;
+}
 /*events*/
 #game-events {
     display: flex;
