@@ -246,7 +246,7 @@ p a:hover {
     color: rgb(94, 90, 90);
     background-color: rgba(247, 240, 245, 0.5);
     margin: 10px;
- } /* Adds some spacing between event boxes */
+ } 
 
     .events-icon {
         width: 25px;
@@ -257,7 +257,24 @@ p a:hover {
     width: 80px;
     height: 80px;
 }
-    
+   
+/* Footer */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    background-color:rgb(242, 224, 243);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: black;
+}
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 767px) {
 
