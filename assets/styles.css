@@ -85,7 +85,7 @@ nav {
 
 /* Navbar styles with dropdown toggle */
 nav {
-    position: absolute;
+    position: relative;
     display: none;
     width: 100%;
     left: 0;
