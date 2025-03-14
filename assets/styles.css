@@ -1,317 +1,299 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:wght@100;400&family=Oswald:wght@200..700&family=Poller+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:wght@100;400&family=Oswald:wght@200..700&family=Poller+One&display=swap");
 
 /* Asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* General styles */
 .lato-thin {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    /* Generic project styles */
-    font-family: 'Lato', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Generic project styles */
+  font-family: "Lato", sans-serif;
 }
 
 header {
-    background-color: rgb(81, 146, 165);
-    padding: 1rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center elements horizontally */
-    text-align: center;
+  background-color: rgb(81, 146, 165);
+  padding: 1rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center elements horizontally */
+  text-align: center;
 }
 
 h1 {
-    font-size: 2rem;
-    margin: 0;
-    color: black;
+  font-size: 2rem;
+  margin: 0;
+  color: black;
 }
 
 h4 {
-    font-size: 1rem;
-    margin: 5px 0; /* Space between h1 and h4 */
+  font-size: 1rem;
+  margin: 5px 0; /* Space between h1 and h4 */
 }
 
 header a {
-    text-decoration: none;
-    color: inherit; /* Ensures it takes the h1 color */
+  text-decoration: none;
+  color: inherit; /* Ensures it takes the h1 color */
 }
-
-/* Navigation */
-nav {
-    width: 100%;
-    text-align: center;
-    margin-top: 10px; /* Space between h4 and nav */
-}
-
-
 
 #menu {
-    display: flex;
-    justify-content: center; /* Centers menu items */
-    gap: 20px;
-    list-style: none;
-    padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: row; /* Centers menu items */
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 #menu li {
-    display: inline;
+  display: block;
+  padding-top: 10px;
 }
 
 #menu a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
 }
 
-
 .active {
-    border-bottom: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
 }
 
 /* Navbar styles with dropdown toggle */
 nav {
-    position: relative;
-    display: none;
+    position: absolute;
     width: 100%;
     left: 0;
-    top: 100%;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
-    background-color: rgb(81, 146, 165); /* Same as header */
+    display: none;
+    top: 100%;
 }
 
 /* Nav toggle */
-#nav-toggle:checked~nav {
-    display: block;
+#nav-toggle:checked ~ nav {
+  display: block;
+  background-color: rgb(81, 146, 165);;
 }
 
 #nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-toggle-label {
-    font-size: 2rem;
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
-
 
 /* Main content */
 main {
-    /* Enlarge main element to push footer down*/
-    flex: 1 0 auto;
-    /* Add margin at the top to prevent content from being covered by the header */
-    margin-top: 100px;
-    /* Enable flex properties for child elements */
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(242, 224, 243);
+  /* Enlarge main element to push footer down*/
+  flex: 1 0 auto;
+  /* Add margin at the top to prevent content from being covered by the header */
+  margin-top: 100px;
+  /* Enable flex properties for child elements */
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(242, 224, 243);
 }
 
 /*hero*/
 #hero {
-        position: relative;
-        height: 600px;
-     width: 100%;
-        background: url('../assets/favicon/images/hello-kitty-hero.jpg') no-repeat center center/cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #hero-overlay {
-        position: absolute;
-        background: rgba(209, 83, 165, 0.5); 
-        color: rgb(255, 255, 255);
-        font-size: 130%;
-    position: absolute;
-    bottom: 40px;
-    width: 40%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background: url("../assets/favicon/images/hello-kitty-hero.jpg") no-repeat
+    center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-       
+
+#hero-overlay {
+  position: absolute;
+  background: rgba(209, 83, 165, 0.5);
+  color: rgb(255, 255, 255);
+  font-size: 130%;
+  position: absolute;
+  bottom: 40px;
+  width: 40%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 p a {
-    text-decoration: none;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
 }
 
 p a:hover {
-    color: purple;
+  color: purple;
 }
 
 /*Info section*/
 #about {
-    background-color: inherit;
+  background-color: inherit;
 }
 
 #info h2 {
-    color: rgb(77, 103, 159);
+  color: rgb(77, 103, 159);
 }
 
 #info {
-    width: 90%;
-    margin: 20px auto;
-    background-color: rgb(95, 136, 206);
+  width: 90%;
+  margin: 20px auto;
+  background-color: rgb(95, 136, 206);
 }
 
 #info h2 {
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 280%;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 280%;
 }
 
 #info h3 {
-    color: rgb(77, 103, 159);
+  color: rgb(77, 103, 159);
 }
 
 #info p {
-    color: white;
+  color: white;
 }
 
-#explore>div,
-#quests>div {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+#explore > div,
+#quests > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-#explore>div {
-    width: 100%; 
-    text-align: center; 
+#explore > div {
+  width: 100%;
+  text-align: center;
 }
 
-#quests>div {
-    width: 100%; 
-    text-align: center; 
-   
+#quests > div {
+  width: 100%;
+  text-align: center;
 }
 
 #about p {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 #about hr {
-     border-top: 1px solid #3a3a3a;
+  border-top: 1px solid #3a3a3a;
 }
 
 /*carousel image*/
 #carouselExample {
-    margin-bottom: 10px; 
-    padding-bottom: 50px;
-    
+  margin-bottom: 10px;
+  padding-bottom: 50px;
 }
 /*events*/
 #game-events {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%; /* Ensures it spans the full width */
-    justify-content: space-between; /* Distributes the divs evenly */
-    align-items: stretch; /* Makes all child divs the same height */
-    background: url('../assets/favicon/images/eventsbgr.jpg') no-repeat center center/cover;
-    filter: brightness(0.8);
-    padding: 20px; /* Adds some spacing */
-    box-sizing: border-box; /* Ensures padding doesn't affect width */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; /* Ensures it spans the full width */
+  justify-content: space-between; /* Distributes the divs evenly */
+  align-items: stretch; /* Makes all child divs the same height */
+  background: url("../assets/favicon/images/eventsbgr.jpg") no-repeat center
+    center/cover;
+  filter: brightness(0.8);
+  padding: 20px; /* Adds some spacing */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 #game-events h2 {
-    color: rgb(94, 90, 90);
+  color: rgb(94, 90, 90);
 }
 
 #game-events div {
-    flex: 1; /* Makes each div take up equal space */
-    min-width: 200px; /* Ensures they don't get too small on smaller screens */
-    padding: 25px;
-    text-align: center;
-    border: 2px solid pink;
-    color: rgb(94, 90, 90);
-    background-color: rgba(247, 240, 245, 0.5);
-    margin: 10px;
- } 
+  flex: 1; /* Makes each div take up equal space */
+  min-width: 200px; /* Ensures they don't get too small on smaller screens */
+  padding: 25px;
+  text-align: center;
+  border: 2px solid pink;
+  color: rgb(94, 90, 90);
+  background-color: rgba(247, 240, 245, 0.5);
+  margin: 10px;
+}
 
 .events-icon {
-    width: 25px;
-    height: 25px;
-    }
+  width: 25px;
+  height: 25px;
+}
 
 #events-calendar {
-    width: 80px;
-    height: 80px;
+  width: 80px;
+  height: 80px;
 }
-   
+
 /* Footer */
 #social-networks {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    background-color:rgb(242, 224, 243);
-    margin-top: auto;
-    margin-bottom: auto;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  background-color: rgb(242, 224, 243);
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #social-networks i {
-    font-size: 160%;
-    padding: 5%;
-    color: black;
+  font-size: 160%;
+  padding: 5%;
+  color: black;
 }
 
 #character-info {
-    width: 85%;
-    background-color: rgb(95, 136, 206);
-    padding-top: 20px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding-top: 0;
+  width: 70%;
+  background-color: rgb(95, 136, 206);
+  padding-top: 20px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 0;
 }
 
-    #character-info p {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    text-align: center; 
-    padding: 20px;
-    margin: 20px;
-    }
+#character-info p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+  margin: 10px;
+}
 
-    #characters-top {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 300px; /* Set a consistent max height */
-    max-width: 500px; /* Set a consistent max width */
-    width: 100%; /* Ensure the image scales with the container */
-    object-fit: contain;
-    padding-top: 0;
-    margin-top: 0;
-    }
+#characters-top {
+  width: 70%;
+}
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 767px) {
-
     nav {
         display: block;
         position: relative;
@@ -322,120 +304,123 @@ p a:hover {
 
     #menu {
         display: flex;
-    }
-
-    #menu>li {
-        padding-left: 1rem;
-    }
-
-    .nav-toggle-label {
-        display: none;
-    }
-
-    #logo {
-        font-size: 280%;
-         line-height: 75px;
-         margin: 0 0.5rem;
-        }
-
-    #hero {
-        background: url('../assets/favicon/images/hello-kitty-hero.jpg')no-repeat center center/cover;
-        height: 80vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-    }
     
-    #hero-overlay {
-        padding: 20px 30px;
-        border-radius: 10px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        text-align: center;
-        margin-top: 100px;
-    }
+      }
+  
 
-    /* Main content */
-    main {
-        /* Push main content down to accommodate larger header */
-        padding: 50px;
-        margin: 50px;
-        display: flex;
-        align-items: center;
-        margin-top: 120px;
-    }
+  #menu > li {
+    padding-left: 1rem;
+  }
 
-    #explore, #quests {
-        display: flex;
-        flex-direction: column;
-        width: 100%; /* Make both take up full width */
-    }
+  .nav-toggle-label {
+    display: none;
+  }
 
-    #explore>div, #quests>div {
-        width: 100%;
-    }
+  #logo {
+    font-size: 280%;
+    line-height: 75px;
+    margin: 0 0.5rem;
+  }
 
-    #quests div {
-        text-align: right; 
-        align-self: center; 
-    }
-    
-    #explore>div {
-        width: 100%; /* Ensure it takes up full width */
-        display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        justify-content: center; /* Vertically center the content */
-        align-items: center; /* Horizontally center the content */
-        text-align: center;
-        margin-left: 10px; 
-    }
+  #hero {
+    background: url("../assets/favicon/images/hello-kitty-hero.jpg") no-repeat
+      center center/cover;
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
 
-    #explore>div h3 {
-        text-align: center !important; /* Ensure h3 is centered */
-        margin-left: 10px;
-        width: 100%; /* Ensure h3 takes up full width */
-    }
+  #hero-overlay {
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+  }
 
-    #characters-main {
-        margin-top: 120px;
-    }
+  /* Main content */
+  main {
+    /* Push main content down to accommodate larger header */
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+  }
 
-    #info {
-        width: 70%;
-    }
+  #explore,
+  #quests {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Make both take up full width */
+  }
 
-}
+  #explore > div,
+  #quests > div {
+    width: 100%;
+  }
+
+  #quests div {
+    text-align: right;
+    align-self: center;
+  }
+
+  #explore > div {
+    width: 100%; /* Ensure it takes up full width */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Vertically center the content */
+    align-items: center; /* Horizontally center the content */
+    text-align: center;
+    margin-left: 10px;
+  }
+
+  #explore > div h3 {
+    text-align: center !important; /* Ensure h3 is centered */
+    margin-left: 10px;
+    width: 100%; /* Ensure h3 takes up full width */
+  }
+
+  #character-info {
+    width: 70%;
+  }
+
+  #characters-main {
+    margin-top: 120px;
+  }
+
+  #info {
+    width: 70%;
+  }
 
 #characters-top {
-    padding-top: 0;
-    margin-top: 0;
+  padding-top: 0;
+  margin-top: 0;
 }
 
-}
-
-    /* Large devices (laptops and desktops, 992px and up) */
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
+  main {
+    margin-top: 1px;
+  }
 
-    main {
-        margin-top: 120px;
-    }
+  #no-space {
+    margin-top: 0;
+  }
 
-    #no-space {
-        margin-top: 0;
-    }
-    
+  #menu a:hover {
+    border-bottom: 1px solid #ffffff;
+  }
 
-    #menu a:hover {
-        border-bottom: 1px solid #ffffff;
-    }
+  #info {
+    width: 70%;
+  }
 
-
-    #info {
-        width: 70%;
-    }
-
-    #character-info {
-        width: 60%;
-    }
+  #character-info {
+    width: 50%;
+    display: block;
+    padding-top: 100px;
+  }
 }
-
