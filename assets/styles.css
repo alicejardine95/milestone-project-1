@@ -158,8 +158,6 @@ p a:hover {
 
 #info h2 {
   color: rgb(49, 77, 136);
-  letter-spacing: 0.3cap;
-  word-spacing: 0.3cap;
 }
 
 #info {
@@ -273,23 +271,23 @@ p a:hover {
 }
 
 #character-info {
-  width: 70%;
+display: flex;
+flex-direction: column;
+align-items: center;
+  width: 80%;
   background-color: rgb(95, 136, 206);
-  padding-top: 20px;
-  margin-top: 10px;
+  margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  padding-top: 0;
 }
 
 #character-info p {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-itemsL center;
   padding-top: 10px;
   margin: 10px;
+  font-size: 25px;
 }
 
 #characters-top {
@@ -396,11 +394,9 @@ p a:hover {
     width: 70%;
     margin-top: 30px;
   }
-
-#characters-top {
-  padding-top: 0;
-  margin-top: 0;
 }
+
+
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
@@ -421,8 +417,7 @@ p a:hover {
   }
 
   #character-info {
-    width: 50%;
-    display: block;
-    padding-top: 100px;
+    width: 60%;
   }
+  
 }
