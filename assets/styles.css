@@ -108,8 +108,6 @@ nav {
 main {
   /* Enlarge main element to push footer down*/
   flex: 1 0 auto;
-  /* Add margin at the top to prevent content from being covered by the header */
-  margin-top: 100px;
   /* Enable flex properties for child elements */
   display: flex;
   flex-direction: column;
@@ -159,7 +157,9 @@ p a:hover {
 }
 
 #info h2 {
-  color: rgb(77, 103, 159);
+  color: rgb(49, 77, 136);
+  letter-spacing: 0.3cap;
+  word-spacing: 0.3cap;
 }
 
 #info {
@@ -175,11 +175,14 @@ p a:hover {
 }
 
 #info h3 {
-  color: rgb(77, 103, 159);
+  color: rgb(52, 59, 75);
+  font-size: 30px;
+  font-style: italic;
 }
 
 #info p {
-  color: white;
+  color: rgb(41, 41, 41);
+  font-size: 24px;
 }
 
 #explore > div,
@@ -221,8 +224,9 @@ p a:hover {
   align-items: stretch; /* Makes all child divs the same height */
   background: url("../assets/favicon/images/eventsbgr.jpg") no-repeat center
     center/cover;
-  filter: brightness(0.8);
-  padding: 20px; /* Adds some spacing */
+  filter: brightness(0.9);
+  padding: 20px; 
+  font-weight: bold;
   box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 #game-events h2 {
@@ -342,12 +346,9 @@ p a:hover {
 
   /* Main content */
   main {
-    /* Push main content down to accommodate larger header */
-    padding: 50px;
-    margin: 50px;
     display: flex;
     align-items: center;
-    margin-top: 120px;
+   
   }
 
   #explore,
@@ -393,6 +394,7 @@ p a:hover {
 
   #info {
     width: 70%;
+    margin-top: 30px;
   }
 
 #characters-top {
