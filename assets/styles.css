@@ -300,6 +300,55 @@ align-items: center;
   
 }
 
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .characters-description {
+    padding: 0 6px;
+    float: left;
+    width: 16%;
+  }
+
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media screen and (max-width: 700px) {
+
+    .characters-description {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+
+    .characters-description {
+        width: 100%;
+    }
+  }
+  
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 767px) {
     nav {
