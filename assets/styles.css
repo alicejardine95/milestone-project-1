@@ -339,6 +339,10 @@ div.gallery {
     .characters-description {
         width: 40%;
     }
+
+    #characters-top {
+        padding-top: 110px;
+    }
   }
   
 /* Media query: tablets and larger (768px and up) */
