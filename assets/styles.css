@@ -156,31 +156,30 @@ p a:hover {
   background-color: rgb(95, 136, 206);
 }
 
-#info h2 {
-  color: rgb(49, 77, 136);
-}
-
-#info {
+.info {
   width: 80vw;
   margin: 20px auto;
   background-color: rgb(95, 136, 206);
 }
 
-#info h2 {
+.info h2 {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 280%;
+  font-size: 35px;
+  color: rgb(49, 77, 136);
+  text-shadow: #3a3a3a;
 }
 
-#info h3 {
+.info h3 {
   color: rgb(52, 59, 75);
-  font-size: 30px;
+  font-size: 25px;
   font-style: italic;
+  text-align: center;
 }
 
-#info p {
+.info p {
   color: rgb(41, 41, 41);
-  font-size: 20px;
+  font-size: 18px;
 }
 
 #explore > div,
@@ -202,16 +201,29 @@ p a:hover {
 
 #about p {
   padding: 0 20px;
+  text-align: center;
 }
 
 #about hr {
   border-top: 1px solid #3a3a3a;
 }
 
+#map {
+    text-align: center;
+}
+
+#map a {
+    color: black;
+}
+
+#map a:hover {
+    color: white;
+}
+
 /*carousel image*/
 #carouselExample {
   margin-bottom: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 /*events*/
 #game-events {
@@ -414,7 +426,7 @@ div.gallery {
   }
 
   #quests div {
-    text-align: right;
+    text-align: center;
     align-self: center;
   }
 
@@ -422,14 +434,11 @@ div.gallery {
     width: 100%; /* Ensure it takes up full width */
     display: flex;
     flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Vertically center the content */
-    align-items: center; /* Horizontally center the content */
-    text-align: center;
-    margin-left: 10px;
+    justify-content: center;
   }
 
   #explore > div h3 {
-    text-align: center !important; /* Ensure h3 is centered */
+    text-align: center;
     margin-left: 10px;
     width: 100%; 
   }
