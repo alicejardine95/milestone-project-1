@@ -302,14 +302,14 @@ display: grid;
   grid-template-columns: repeat(2, 1fr); /* Force 3 columns */
   gap: 5px;
   width: 50%; 
-  padding-top: 130px;
+  padding-top: 100px;
   margin-bottom: 30px;
 }
 
 .container p {
     display: block;
     border: solid 1px pink;
-    padding: 10px;
+    padding: px;
 }
 .character {
     background: white;
@@ -317,7 +317,7 @@ display: grid;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
-    min-height: 150px; /* Ensure visibility */
+    min-height: 150px; /* Ensure visibility */ */
 }
 .character img {
     width: 100%;
@@ -446,7 +446,7 @@ details {
 
   .container {
     grid-template-columns: repeat(3, 1fr); /* 3 columns on smaller screens */
-    padding-top: 200px;
+    padding-top: 190px;
 }
 
 }
