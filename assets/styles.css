@@ -299,11 +299,17 @@ p a:hover {
 
 .container {
 display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Force 3 columns */
+  grid-template-columns: repeat(2, 1fr); /* Force 3 columns */
   gap: 5px;
   width: 50%; 
   padding-top: 110px;
   margin-bottom: 30px;
+}
+
+.container p {
+    display: block;
+    border: solid 1px pink;
+    padding: 10px;
 }
 .character {
     background: white;
