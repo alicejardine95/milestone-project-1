@@ -172,7 +172,6 @@ main {
   text-align: center;
   font-size: 35px;
   color: rgb(49, 77, 136);
-  text-shadow: #3a3a3a;
 }
 
 .info h3 {
@@ -499,7 +498,7 @@ summary {
 
     /*characters page*/
     .container {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       padding-top: 70px;
     }
 
@@ -507,14 +506,7 @@ summary {
   }
 
   @media screen and (min-width: 1200px) {
-
-
     .container {
-      grid-template-columns: repeat(3, 1fr);
-      
+      grid-template-columns: repeat(4, 1fr);
     }
-
-
-
-
   }
