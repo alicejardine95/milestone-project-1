@@ -299,10 +299,10 @@ p a:hover {
 
 .container {
 display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Force 3 columns */
+  grid-template-columns: repeat(1, 1fr); /* Force 3 columns */
   gap: 5px;
   width: 50%; 
-  padding-top: 100px;
+  padding-top: 110px;
   margin-bottom: 30px;
 }
 
@@ -317,15 +317,26 @@ display: grid;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
     text-align: center;
-    min-height: 150px; /* Ensure visibility */ */
+    min-height: 120px; 
 }
 .character img {
     width: 100%;
     object-fit: cover;
     border-radius: 10px;
+    overflow: hidden;
 }
+
 details {
     margin-top: 10px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #f2e0f3;
+  border: 1px solid pink;
+  border-radius: 5px;
 }
 
   
@@ -497,7 +508,7 @@ details {
   }
 
   .container {
-    grid-template-columns: repeat(4, 1fr); /* 4 columns on mobile */
+    grid-template-columns: repeat(3, 1fr); /* 4 columns on mobile */
     padding-top: 70px;
 }
   
@@ -514,7 +525,7 @@ details {
       }
 
       .container {
-        grid-template-columns: repeat(4, 1fr); /* 4 columns on mobile */
+        grid-template-columns: repeat(3, 1fr); /* 4 columns on mobile */
     }
 
     
