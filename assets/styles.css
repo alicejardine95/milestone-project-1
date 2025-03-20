@@ -59,7 +59,7 @@ header a {
 }
 
 #menu a:hover {
-  color: rgb(159, 79, 92);
+  color: white;
 }
 
 #menu a {
@@ -337,7 +337,10 @@ main {
   width: 100%;
   object-fit: cover;
   border-radius: 10px;
+  min-height: 120px;
 }
+
+
 
 details {
   margin-top: auto;
@@ -458,6 +461,10 @@ summary {
     padding-top: 190px;
   }
 
+  
+  
+}
+
 
 
 
@@ -500,6 +507,15 @@ summary {
     .container {
       grid-template-columns: repeat(4, 1fr);
       padding-top: 70px;
+    }
+
+    #big-challenges {
+      align-items: center;
+      margin-top: 100px;
+    }
+    
+    #big-challenges-image {
+      padding-top: 100px;
     }
 
 
