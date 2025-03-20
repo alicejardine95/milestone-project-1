@@ -135,7 +135,7 @@ main {
 #hero-overlay {
   position: absolute;
   background: rgba(209, 83, 165, 0.5);
-  color: rgb(255, 255, 255);
+  color: black;
   font-size: 130%;
   position: absolute;
   bottom: 40px;
@@ -146,14 +146,14 @@ main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-p a {
+#hero-overlay p a {
   text-decoration: none;
   font-weight: bold;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 
-p a:hover {
-  color: rgb(159, 79, 92);
+#hero-overlay p a:hover {
+  color: white;
 }
 
 /*Info section*/
@@ -185,6 +185,15 @@ p a:hover {
 .info p {
   color: rgb(41, 41, 41);
   font-size: 18px;
+}
+
+.character-link a {
+  color: black;
+  text-decoration: none;
+}
+
+.character-link a:hover {
+  color: white;
 }
 
 #explore>div,
