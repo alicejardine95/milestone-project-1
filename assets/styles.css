@@ -308,6 +308,7 @@ main {
 }
 
 
+
 /*characters page*/
 
 .container {
@@ -455,17 +456,16 @@ summary {
   }
 
   /*characters page*/
-  .container {
-    grid-template-columns: repeat(3, 1fr);
-    /* 3 columns on smaller screens */
-    padding-top: 190px;
+    .container {
+      grid-template-columns: repeat(3, 1fr);
+      /* 3 columns on smaller screens */
+      padding-top: 190px;
+    }
+
+    
+   
   }
-
   
-  
-}
-
-
 
 
   /* Large devices (laptops and desktops, 992px and up) */
@@ -517,12 +517,11 @@ summary {
     #big-challenges-image {
       padding-top: 100px;
     }
-
-
   }
 
   @media screen and (min-width: 1200px) {
     .container {
       grid-template-columns: repeat(4, 1fr);
     }
+    
   }
