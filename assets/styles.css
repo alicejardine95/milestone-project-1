@@ -536,6 +536,7 @@ summary {
       align-items: center;
       min-height: 100vh;
       padding: 20px;
+      width: 80%;
     }
     
     #signup-form {
