@@ -379,6 +379,8 @@ summary {
   padding-bottom: 50px;
   align-content: center;
   border-radius: 3%;
+  max-width: none;
+  min-width: 280px;
 }
 
 #signup-form>h2 {
