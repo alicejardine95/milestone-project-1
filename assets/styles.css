@@ -341,8 +341,6 @@ main {
   min-height: 120px;
 }
 
-
-
 details {
   margin-top: auto;
 }
@@ -361,12 +359,12 @@ summary {
 #signup {
   background-image: url("../assets/favicon/images/events.jpg");
   background-size: cover;
-  width: 80%;
-  background-position: 100%;
-  flex-grow: 1;
-  margin: auto;
-  padding-top:170px;
-  border:#cfc0ce 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full height */
+  width: 100%;
+  padding: 20px; /* Add padding for better spacing */
 }
 
 #signup-form {
@@ -374,9 +372,9 @@ summary {
   background-color: rgba(255, 255, 255, 0.6);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   font-weight: bold;
-  margin-top: 0px;
-  padding-top: 30px;
-  padding-bottom: 50px;
+  margin-top: 90px;
+  padding-top: 40px;
+  padding-bottom: 20px;
   align-content: center;
   border-radius: 3%;
   max-width: none;
@@ -465,7 +463,10 @@ summary {
     font-size: 280%;
     line-height: 75px;
     margin: 0 0.5rem;
+    color: black;
   }
+
+  
 
   /*hero image*/
   #hero {
