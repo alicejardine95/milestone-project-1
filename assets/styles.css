@@ -539,7 +539,7 @@ summary {
     }
     
     #signup-form {
-      width: 60%; /* Make the form take up most of the screen on mobile */
+      width: 80%; 
       max-width: 400px; /* Limit max width on larger screens */
       padding: 20px;
       border-radius: 8px;
