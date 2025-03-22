@@ -447,9 +447,8 @@ summary {
 /*Thank you page*/
 
 .card {
-  margin-top: 80px;
+  margin-top: 115px;
   text-align: center;
-  padding: 5px
   border: solid rgb(219, 157, 195) 1px;
  
 }
@@ -466,7 +465,12 @@ summary {
   border: solid rgb(219, 157, 195) 1px;
 }
 
-  
+@media screen and (min-width: 380px) {
+
+  .card {
+    margin-top: 85px;
+  }
+} 
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
