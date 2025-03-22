@@ -447,7 +447,7 @@ summary {
 /*Thank you page*/
 
 .card {
-  margin-top: 90px;
+  margin-top: 80px;
   text-align: center;
   padding: 5px
   border: solid rgb(219, 157, 195) 1px;
@@ -636,7 +636,11 @@ summary {
       color: #9f1395;
     }
     
-   
+   /*subscribe page*/
+
+   .card {
+    margin-top: 160px;
+   }
   }
   
 
@@ -689,6 +693,11 @@ summary {
     
     #big-challenges-image {
       padding-top: 100px;
+    }
+
+    /*subscribe page*/
+    .card {
+      margin-top: 50px;
     }
 
     
