@@ -356,6 +356,26 @@ summary {
   border-radius: 5px;
 }
 
+#button {
+  padding-bottom: 6px;
+}
+
+.top-button {
+  color: black;
+  background-color: white;
+  border: solid 1px black;
+  text-decoration: none;
+  padding: 6px;
+  margin: 3px;
+  border-radius: 7px;
+  align-content: center;
+  font-weight: bold;
+}
+
+.top-button:hover {
+  color: rgb(215, 43, 254);
+}
+
 /*sign-up page*/
 
 #signup {
