@@ -157,24 +157,23 @@ main {
   color: white;
 }
 
-/*Info section*/
+
+
 #about {
   background-color: rgb(95, 136, 206);
+  background: linear-gradient(90deg, rgba(95,136,206,1) 0%, rgba(240,172,237,1) 35%, rgba(236,173,237,1) 36%, rgba(250,216,255,1) 38%, rgba(183,243,255,1) 100%);
 }
 
 .info {
-  width: 90%;
-  margin: 20px auto;
+  width: 85%;
+  margin: 10px auto;
   background-color: rgb(95, 136, 206);
-  border: solid rgb(64, 90, 193) 1px;
+  background: linear-gradient(90deg, rgba(95,136,206,1) 0%, rgba(240,172,237,1) 35%, rgba(236,173,237,1) 36%, rgba(250,216,255,1) 38%, rgba(183,243,255,1) 100%);
+  border: solid rgb(255, 255, 255) 1px;
+  border-radius: 30px;
+  padding: 20px;
 }
 
-.info h2 {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 35px;
-  color: rgb(49, 77, 136);
-}
 
 .info h3 {
   color: rgb(52, 59, 75);
@@ -227,22 +226,15 @@ main {
 #map {
   text-align: center;
   color: black;
-}
-
-#map a {
-  color: black;
-}
-
-#map a:hover {
-  color: white;
+  font-size: 20px;
 }
 
 /*carousel image*/
 #carousel {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  width: 60%;
-  background-color: rgb(95, 136, 206);
+  margin: 40px;
+  padding: 20px;
+
+  
 }
 
 /*events*/
@@ -549,38 +541,6 @@ summary {
     align-items: center;
   }
 
-  /*info section*/
-
-  #explore,
-  #quests {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    /* Make both take up full width */
-  }
-
-  #explore>div,
-  #quests>div {
-    width: 100%;
-  }
-
-  #quests div {
-    text-align: center;
-    align-self: center;
-  }
-
-  #explore>div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  #explore>div h3 {
-    text-align: center;
-    margin-left: 10px;
-    width: 100%;
-  }
 
   /*characters page*/
     .container {
@@ -689,6 +649,11 @@ summary {
 
     #menu a:hover {
       border-bottom: 1px solid #ffffff;
+    }
+
+    .info {
+      padding: 25px;
+      margin: 20px;
     }
 
     /*characters page*/
