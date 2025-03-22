@@ -1,3 +1,4 @@
+/*google fonts import*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:wght@100;400&family=Oswald:wght@200..700&family=Poller+One&display=swap");
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -45,6 +46,7 @@ header a {
   text-decoration: none;
 }
 
+/*navbar*/
 #menu {
   flex-direction: column;
   align-items: center;
@@ -74,7 +76,6 @@ header a {
   border-bottom: 1px solid #3a3a3a;
 }
 
-/* Navbar styles with dropdown toggle */
 nav {
   display: none;
   position: absolute;
@@ -120,7 +121,7 @@ main {
   width: 100%;
 }
 
-/*hero*/
+/*hero section*/
 #hero {
   position: relative;
   height: 600px;
@@ -250,9 +251,7 @@ main {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
-  /* Distributes the divs evenly */
   align-items: stretch;
-  /* Makes all child divs the same height */
   background: url("../assets/favicon/images/eventsbgr.jpg") no-repeat center center/cover;
   filter: brightness(0.9);
   padding: 20px;
@@ -268,9 +267,7 @@ main {
 
 #game-events div {
   flex: 1;
-  /* Makes each div take up equal space */
   min-width: 200px;
-  /* Ensures they don't get too small on smaller screens */
   padding: 25px;
   text-align: center;
   border: 2px solid pink;
@@ -387,9 +384,9 @@ summary {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; /* Ensure full height */
+  min-height: 100vh; 
   width: 100%;
-  padding: 20px; /* Add padding for better spacing */
+  padding: 20px; 
 }
 
 #signup-form {
@@ -450,7 +447,7 @@ summary {
   background-color: white;
 }
 
-/*Thank you page*/
+/*subscribe/thank you page*/
 
 .card {
   margin-top: 115px;
@@ -473,8 +470,13 @@ summary {
 
 @media screen and (min-width: 380px) {
 
+  /*thank you/subscribe page*/
   .card {
     margin-top: 85px;
+  }
+
+  .join-button {
+    margin-left: 2px;
   }
 } 
 
@@ -483,6 +485,8 @@ summary {
 
   main {
     padding-top: 3px;
+    display: flex;
+    align-items: center;
   }
 
   /*navbar*/
@@ -520,7 +524,6 @@ summary {
   }
 
   
-
   /*hero image*/
   #hero {
     background: url("../assets/favicon/images/hello-kitty-hero.jpg") no-repeat center center/cover;
@@ -547,7 +550,6 @@ summary {
 
   /*info section*/
 
-  
   #explore,
   #quests {
     display: flex;
@@ -568,10 +570,8 @@ summary {
 
   #explore>div {
     width: 100%;
-    /* Ensure it takes up full width */
     display: flex;
     flex-direction: column;
-    /* Stack elements vertically */
     justify-content: center;
   }
 
@@ -584,10 +584,10 @@ summary {
   /*characters page*/
     .container {
       grid-template-columns: repeat(3, 1fr);
-      /* 3 columns on smaller screens */
       padding-top: 190px;
     }
 
+    /*sign up page*/
     #signup {
       display: flex;
       justify-content: center;
@@ -598,7 +598,7 @@ summary {
     
     #signup-form {
       width: 80%; 
-      max-width: 400px; /* Limit max width on larger screens */
+      max-width: 400px; 
       padding: 20px;
       border-radius: 8px;
       background-color: rgba(255, 255, 255, 0.8);
@@ -709,11 +709,14 @@ summary {
     .card {
       margin-top: 50px;
     }
-
+.join-button {
+  margin-left: 5px;
+}
     
    
 
   @media screen and (min-width: 1200px) {
+    /*characters page*/
     .container {
       grid-template-columns: repeat(4, 1fr);
     }
