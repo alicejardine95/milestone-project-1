@@ -361,6 +361,8 @@ summary {
 }
 
 .top-button {
+  display: block;
+  text-align: center;
   color: black;
   background-color: white;
   border: solid 1px black;
@@ -370,6 +372,7 @@ summary {
   border-radius: 7px;
   align-content: center;
   font-weight: bold;
+  width: 100%;
 }
 
 .top-button:hover {
