@@ -162,9 +162,10 @@ main {
 }
 
 .info {
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   background-color: rgb(95, 136, 206);
+  border: solid rgb(64, 90, 193) 1px;
 }
 
 .info h2 {
@@ -188,7 +189,7 @@ main {
 
 .character-link a {
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .character-link a:hover {
@@ -206,6 +207,7 @@ main {
   width: 100%;
   text-align: center;
 }
+
 
 #quests>div {
   width: 100%;
@@ -513,6 +515,8 @@ summary {
   }
 
   /*info section*/
+
+  
   #explore,
   #quests {
     display: flex;
