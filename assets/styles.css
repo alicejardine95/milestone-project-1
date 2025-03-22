@@ -435,8 +435,9 @@ summary {
   color: #9f1395;
   font-size: 100%;
   margin-top: 20px;
-  padding: 15px 32px;
+  padding: 15px 150px;
   font-weight: bold;
+  
 }
 
 .join-button:hover {
