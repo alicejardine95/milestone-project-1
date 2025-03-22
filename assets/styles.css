@@ -713,13 +713,14 @@ summary {
 .join-button {
   margin-left: 5px;
 }
+}
     
    
 
   @media screen and (min-width: 1200px) {
     /*characters page*/
     .container {
-      grid-template-columns: repeat(4, 1fr);
-    }
+    grid-template-columns: repeat(4, 1fr);
+ }
+}
     
-  }
