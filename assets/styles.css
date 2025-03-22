@@ -307,8 +307,6 @@ main {
   color: black;
 }
 
-
-
 /*characters page*/
 
 .container {
@@ -318,6 +316,8 @@ main {
   width: 50%;
   padding-top: 110px;
   margin-bottom: 30px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 .container p {
@@ -396,7 +396,6 @@ summary {
   border: 1px solid #000000;
   border-radius: 2px;
   padding: 0 5px;
-  font-weight: bold;
 }
 
 .text-input::placeholder {
@@ -422,6 +421,27 @@ summary {
   background-color: white;
 }
 
+/*Thank you page*/
+
+.card {
+  margin-top: 90px;
+  text-align: center;
+  padding: 5px
+  border: solid rgb(219, 157, 195) 1px;
+ 
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+.card-text, .card-title {
+  font-family:Arial, Helvetica, sans-serif;
+}
+.card-body {
+  background-color: rgb(250, 219, 255);
+  border: solid rgb(219, 157, 195) 1px;
+}
 
   
 
