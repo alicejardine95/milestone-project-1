@@ -126,31 +126,31 @@ main {
   position: relative;
   height: 600px;
   width: 100%;
-  background: url("../assets/favicon/images/hello-kitty-hero.jpg") no-repeat center center/cover;
+  background: url("../assets/favicon/images/hkhero2.webp") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 200px;
 }
 
 #hero-overlay {
   position: absolute;
-  background: rgba(209, 83, 165, 0.5);
+  background: rgba(101, 96, 101, 0.5);
   color: black;
   font-size: 130%;
-  position: absolute;
+  position: relative;
   bottom: 40px;
   width: 40%;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  padding-left: 10px;
+  padding: 40px 10px 40px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 4px;
 }
 
 #hero-overlay p a {
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 #hero-overlay p a:hover {
@@ -191,27 +191,13 @@ background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(
   color: white;
 }
 
-#explore>div,
-#quests>div {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 30px;
-
-}
-
-#explore>div {
-  width: 100%;
-  text-align: center;
-}
-
 
 #quests>div {
   width: 100%;
   text-align: center;
 }
 
-#about p {
+#info, #about p {
   padding: 0 20px;
   text-align: center;
 }
@@ -257,6 +243,7 @@ background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(
   filter: brightness(0.9);
   padding: 15px;
   font-weight: bold;
+  margin-top: 15px;
 }
 
 #game-events h3 {
@@ -528,11 +515,9 @@ summary {
   
   /*hero image*/
   #hero {
-    background: url("../assets/favicon/images/hello-kitty-hero.jpg") no-repeat center center/cover;
-    height: 80vh;
+    height: 1300px;
     width: 100vw;
-    display: flex;
-    align-items: center;
+
   }
 
   #hero-overlay {
@@ -541,7 +526,7 @@ summary {
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 60px;
   }
 
   /* Main content */
@@ -660,10 +645,7 @@ summary {
       border-bottom: 1px solid #ffffff;
     }
 
-    .info {
-      padding: 25px;
-      margin: 20px;
-    }
+    
 
     /*characters page*/
     .container {
