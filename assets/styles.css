@@ -307,13 +307,16 @@ background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(
 
 }
 
-.container p {
+.container p, dl {
   border: solid 1px pink;
   padding: 10px;
+  background-color: #fffeff;;
+  border-radius: 5px;
 }
 
 .character {
-  background: white;
+  background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(169,211,237,1) 16%, rgba(199,241,249,1) 19%, rgba(247,208,255,0.4318102240896359) 29%, rgba(251,224,255,1) 78%, rgba(148,190,228,1) 91%, rgba(201,247,255,1) 100%);
+  border: solid rgb(255, 255, 255) 1px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -336,7 +339,7 @@ summary {
   cursor: pointer;
   font-weight: bold;
   padding: 10px;
-  background-color: #f2e0f3;
+  background-color: #fffeff;
   border: 1px solid pink;
   border-radius: 5px;
 }
