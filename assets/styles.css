@@ -161,12 +161,12 @@ main {
 
 .info {
   width: 85%;
-  margin: 30px auto;
+  margin: 25px auto;
   background: rgb(95,136,206);
 background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(169,211,237,1) 16%, rgba(199,241,249,1) 19%, rgba(247,208,255,0.4318102240896359) 29%, rgba(251,224,255,1) 78%, rgba(148,190,228,1) 91%, rgba(201,247,255,1) 100%);
   border: solid rgb(255, 255, 255) 1px;
   border-radius: 30px;
-  padding: 30px;
+  padding: 50px;
 }
 
 
@@ -196,6 +196,7 @@ background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 30px;
 
 }
 
@@ -240,6 +241,7 @@ background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(
 .pink-button:hover {
   background-color: rgb(255, 255, 255); 
   color: rgb(201, 94, 236);
+  margin-bottom: 30px;
 }
 
 
