@@ -124,8 +124,7 @@ main {
 /*hero section*/
 #hero {
   position: relative;
-  height: 600px;
-  width: 100%;
+  margin-top: 40px;
   background: url("../assets/favicon/images/hkhero2.webp") no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -515,9 +514,9 @@ summary {
   
   /*hero image*/
   #hero {
-    height: 1300px;
+    height:900px;
     width: 100vw;
-
+    margin-top: 90px;
   }
 
   #hero-overlay {
@@ -645,7 +644,11 @@ summary {
       border-bottom: 1px solid #ffffff;
     }
 
-    
+    #hero {
+      height: 1290px;
+      width: 100vw;
+      margin-top: 0;
+    }
 
     /*characters page*/
     .container {
