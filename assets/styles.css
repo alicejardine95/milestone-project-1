@@ -124,7 +124,7 @@ main {
 /*hero section*/
 #hero {
   position: relative;
-  margin-top: 50px;
+  margin-top: 70px;
   background: url("../assets/favicon/images/hkhero2.webp") no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -459,7 +459,7 @@ summary {
 @media screen and (min-width: 380px) {
 
   #hero {
-    margin-top: 30px;
+    margin-top: 40px;
   }
   /*thank you/subscribe page*/
   .card {
@@ -518,7 +518,7 @@ summary {
   /*hero image*/
   #hero {
     width: 100vw;
-    margin-top: 120px;
+    margin-top: 125px;
     padding-top: 400px;
   }
 
