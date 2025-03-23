@@ -159,19 +159,14 @@ main {
 
 
 
-#about {
-  background-color: rgb(95, 136, 206);
-  background: linear-gradient(90deg, rgba(95,136,206,1) 0%, rgba(240,172,237,1) 35%, rgba(236,173,237,1) 36%, rgba(250,216,255,1) 38%, rgba(183,243,255,1) 100%);
-}
-
 .info {
   width: 85%;
   margin: 10px auto;
-  background-color: rgb(95, 136, 206);
-  background: linear-gradient(90deg, rgba(95,136,206,1) 0%, rgba(240,172,237,1) 35%, rgba(236,173,237,1) 36%, rgba(250,216,255,1) 38%, rgba(183,243,255,1) 100%);
+  background: rgb(95,136,206);
+background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(169,211,237,1) 16%, rgba(199,241,249,1) 19%, rgba(247,208,255,0.4318102240896359) 29%, rgba(251,224,255,1) 78%, rgba(148,190,228,1) 91%, rgba(201,247,255,1) 100%);
   border: solid rgb(255, 255, 255) 1px;
   border-radius: 30px;
-  padding: 20px;
+  padding: 30px;
 }
 
 
@@ -201,6 +196,7 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
+
 }
 
 #explore>div {
@@ -223,11 +219,6 @@ main {
   border-top: 1px solid #3a3a3a;
 }
 
-#map {
-  text-align: center;
-  color: black;
-  font-size: 20px;
-}
 
 /*carousel image*/
 #carousel {
@@ -246,7 +237,7 @@ main {
   align-items: stretch;
   background: url("../assets/favicon/images/eventsbgr.jpg") no-repeat center center/cover;
   filter: brightness(0.9);
-  padding: 20px;
+  padding: 15px;
   font-weight: bold;
 }
 
@@ -264,7 +255,7 @@ main {
   text-align: center;
   border: 2px solid pink;
   color: rgb(52, 49, 49);
-  background-color: rgba(247, 240, 245, 0.5);
+  background-color: rgba(248, 230, 239, 0.7);
   margin: 10px;
   width: 100%;
 }
