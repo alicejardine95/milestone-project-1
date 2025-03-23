@@ -205,11 +205,15 @@ background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(
   border-top: 1px solid #3a3a3a;
 }
 
+/*image carousel*/
+
 .carousel-border {
   padding: 30px 15px 2px;
 }
+
+/*Button to external site*/
 .pink-button {
-  background-color: #ce9bdd; /* Pink */
+  background-color: #ce9bdd; 
   color: rgb(255, 255, 255);
   border: solid pink 1px;
   font-size: 18px;
@@ -228,8 +232,6 @@ background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(
   color: rgb(201, 94, 236);
   margin-bottom: 30px;
 }
-
-
 
 /*events*/
 #game-events {
@@ -250,7 +252,6 @@ background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(
   font-size: 20px;
   font-weight: bold;
 }
-
 
 #game-events div {
   flex: 1;
@@ -610,8 +611,6 @@ summary {
    }
   }
   
-
-
   /* Large devices (laptops and desktops, 992px and up) */
   @media screen and (min-width: 992px) {
 
@@ -639,14 +638,12 @@ summary {
 
     #menu li {
       display: inline-block;
-      /* Display list items inline */
     }
-
 
     #menu a:hover {
       border-bottom: 1px solid #ffffff;
     }
-
+ /*Hero section*/
     #hero {
       height: 1290px;
       width: 100vw;
@@ -674,10 +671,8 @@ summary {
     }
 .join-button {
   margin-left: 5px;
+ }
 }
-}
-    
-   
 
   @media screen and (min-width: 1200px) {
     /*characters page*/
