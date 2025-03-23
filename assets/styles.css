@@ -124,13 +124,13 @@ main {
 /*hero section*/
 #hero {
   position: relative;
-  margin-top: 70px;
+  margin-top: 40px;
   background: url("../assets/favicon/images/hkhero2.webp") no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding-top: 200px;
+  padding-top: 260px;
 }
 
 #hero-overlay {
@@ -165,7 +165,7 @@ main {
 background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(169,211,237,1) 16%, rgba(199,241,249,1) 19%, rgba(247,208,255,0.4318102240896359) 29%, rgba(251,224,255,1) 78%, rgba(148,190,228,1) 91%, rgba(201,247,255,1) 100%);
   border: solid rgb(255, 255, 255) 1px;
   border-radius: 30px;
-  padding: 50px;
+  padding: 20px;
 }
 
 
@@ -208,7 +208,7 @@ background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(
 /*image carousel*/
 
 .carousel-border {
-  padding: 30px 15px 2px;
+  margin: 30px 15px 2px;
 }
 
 /*Button to external site*/
@@ -459,9 +459,7 @@ summary {
 
 @media screen and (min-width: 380px) {
 
-  #hero {
-    margin-top: 40px;
-  }
+  
   /*thank you/subscribe page*/
   .card {
     margin-top: 85px;
@@ -520,7 +518,6 @@ summary {
   #hero {
     width: 100vw;
     margin-top: 125px;
-    padding-top: 400px;
   }
 
   #hero-overlay {
@@ -537,7 +534,6 @@ summary {
     display: flex;
     align-items: center;
   }
-
 
   /*characters page*/
     .container {
@@ -645,11 +641,12 @@ summary {
     }
  /*Hero section*/
     #hero {
-      height: 1290px;
+      height: 80vh;
       width: 100vw;
       margin-top: 0;
     }
 
+ 
     /*characters page*/
     .container {
       grid-template-columns: repeat(4, 1fr);
@@ -675,6 +672,11 @@ summary {
 }
 
   @media screen and (min-width: 1200px) {
+    
+    #hero {
+      width: 100vw;
+      height: 100vh;
+    }
     /*characters page*/
     .container {
     grid-template-columns: repeat(4, 1fr);
