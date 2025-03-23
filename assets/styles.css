@@ -161,7 +161,7 @@ main {
 
 .info {
   width: 85%;
-  margin: 10px auto;
+  margin: 30px auto;
   background: rgb(95,136,206);
 background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(169,211,237,1) 16%, rgba(199,241,249,1) 19%, rgba(247,208,255,0.4318102240896359) 29%, rgba(251,224,255,1) 78%, rgba(148,190,228,1) 91%, rgba(201,247,255,1) 100%);
   border: solid rgb(255, 255, 255) 1px;
@@ -219,14 +219,30 @@ background: linear-gradient(90deg, rgba(95,136,206,0.6082808123249299) 8%, rgba(
   border-top: 1px solid #3a3a3a;
 }
 
-
-/*carousel image*/
-#carousel {
-  margin: 40px;
-  padding: 20px;
-
-  
+.carousel-border {
+  padding: 30px 15px 2px;
 }
+.pink-button {
+  background-color: #ce9bdd; /* Pink */
+  color: rgb(255, 255, 255);
+  border: solid pink 1px;
+  font-size: 18px;
+  padding: 12px 24px;
+  margin: 30px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.pink-button:hover {
+  background-color: rgb(255, 255, 255); 
+  color: rgb(201, 94, 236);
+}
+
+
 
 /*events*/
 #game-events {
